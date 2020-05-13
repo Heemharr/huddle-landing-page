@@ -1,10 +1,12 @@
 *{
     box-sizing: border-box;
+   
 }
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    overflow-x: hidden;   
 }
 .top-bar{
     background-image: url(./images/bg-hero-desktop.svg);
@@ -76,7 +78,7 @@ body {
     height: 100%;
     width: 100%;
 }
-.adv {
+.adv1, .adv2, .adv3 {
     display: flex;
      justify-content: space-around;
      flex-wrap: wrap;
@@ -91,7 +93,7 @@ body {
     flex-basis: 90%;
     flex: 1;
 }
-.illus1 {
+.illus1, .illus3 {
     width: 250px;
     height: auto;
 }
@@ -202,4 +204,397 @@ ul li a {
 }
 .social-media-container {
      margin-left: 3rem;
+}
+
+@media only screen and (max-width: 320px){
+.top-bar{
+    padding: 5px 10px;
+    height: 100%;
+    width: 320px;
+
+}
+.huddle {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 1rem 0 2rem;
+} 
+.icon .logo{
+    height: auto;
+    width: 100px;
+}
+.head-text {
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 10px; 
+}
+.community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.text-in-header {
+    margin: 5px 8px 0 0;
+}
+.build-text h3{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.huddle-in-header p{
+    font-size: 12px;
+    color: black;
+}
+.get-started-text {
+    padding: 10px 0px;
+    color: lavender;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.get-started {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 10px;
+    width: 180px;
+    color: white;
+}
+.head-img {
+    height: auto;
+    width: 220px;
+}
+.body-container {
+    height: 100%;
+    width: 320px;
+}
+.adv2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    margin: 15px 20px 20px 15px;
+    width: 90%;
+    height: 100%; 
+    flex-basis: 80%;
+}
+.adv1, .adv3{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    margin: 15px 20px 20px 15px;
+    width: 90%;
+    height: 100%; 
+    flex-basis: 80%;
+}
+.illus1 {
+    width: 200px;
+    height: auto;
+}
+.illus2 {
+    width: 200px;
+    height: auto;
+}
+.illus3 {
+    width: 200px;
+    height: auto;
+}
+.text1 p {
+    color: grey;
+    font-size: 12px;
+}
+.text1 h3{
+    font-size: 22px;
+}
+
+.footer-container {
+    background-color: rgb(6, 27, 27);
+    padding: 20px 20px;
+    align-items: center;
+    position: relative;
+    width: 320px;
+    height: 100%;
+    margin-top: 12rem;
+    flex-wrap: wrap;
+    z-index: -1;
+    flex-basis: 100%;
+}
+.floating-box {
+    position: absolute;
+    width: 280px;
+    z-index: 1;
+    background-color: white;
+    top: -10%;
+    box-shadow:0px 0px 4px 0px rgba(227, 239, 243, 0.9);
+    left: 5%;
+    height: 20%;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.floating-box h3 {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.floating-box .footer-btn {
+    font-size: 10px;
+    padding: 5px 5px;
+    width: 50%;
+}
+.logo-footer img{
+    padding: 10px 2px;
+    margin: 40px 0 0;
+    height: auto;
+    width: 38%;
+}
+ .main-footer{
+    padding:0;
+    margin: 0;
+    position: relative;
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex: 1;
+} 
+.footer-text {
+    color: white;
+    padding: 5 5px;
+    font-size: 10px;
+} 
+ ul{
+    list-style: none;
+    padding: 0rem .2rem;
+    line-height: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+} 
+.social-media-text p {
+    color: white;
+    font-size: 10px;
+    margin-top: 1rem;
+    line-height: 15px;
+}
+.address, .number, .mail {
+    display: flex;
+}
+ .contact-icon {
+    height: 12px;
+    margin: 10px 0px 0;
+}
+.social-media {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.social-media-container {
+     margin-left: .5rem;
+}
+}
+@media only screen and (min-width: 375px) and (max-width: 500px){
+    .top-bar{
+    padding: 5px 10px;
+    height: 100%;
+    width: 100%;
+
+}
+.huddle {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 1rem 0 2rem;
+} 
+.icon .logo{
+    height: auto;
+    width: 100px;
+}
+.head-text {
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 10px; 
+}
+.community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.text-in-header {
+    margin: 5px 8px 0 0;
+}
+.build-text h3{
+    text-transform: capitalize;
+    font-size: 24px;
+}
+.huddle-in-header p{
+    font-size: 12px;
+    color: black;
+}
+.get-started-text {
+    padding: 10px 0px;
+    color: lavender;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.get-started {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 10px;
+    width: 180px;
+    color: white;
+}
+.head-img {
+    height: auto;
+    width: 280px;
+}
+.body-container {
+    height: 100%;
+    width: 100%;
+}
+.adv2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem .5rem;
+    margin: 15px 10px 10px 15px;
+    width: 90%;
+    height: 100%; 
+    flex-basis: 80%;
+}
+.adv1, .adv3{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem .5rem;
+    margin: 15px 10px 10px 15px;
+    width: 90%;
+    height: 100%; 
+    flex-basis: 80%;
+}
+.illus1 {
+    width: 200px;
+    height: auto;
+}
+.illus2 {
+    width: 200px;
+    height: auto;
+}
+.illus3 {
+    width: 200px;
+    height: auto;
+}
+.text1 p {
+    color: grey;
+    font-size: 12px;
+}
+.text1 h3{
+    font-size: 22px;
+}
+
+.footer-container {
+    background-color: rgb(6, 27, 27);
+    padding: 20px 20px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 9rem;
+    flex-wrap: wrap;
+    z-index: -1;
+    flex-basis: 100%;
+}
+.floating-box {
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+    background-color: white;
+    top: -10%;
+    box-shadow:0px 0px 4px 0px rgba(227, 239, 243, 0.9);
+    left: 8%;
+    height: 20%;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.floating-box h3 {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.floating-box .footer-btn {
+    font-size: 10px;
+    padding: 5px 5px;
+    width: 50%;
+}
+.logo-footer img{
+    padding: 20px 2px;
+    margin: 50px 0 0;
+    height: auto;
+    width: 38%;
+}
+ .main-footer{
+    padding:0;
+    margin: 0;
+    position: relative;
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex: 0;
+} 
+.footer-text {
+    color: white;
+    padding: 5 10px;
+    font-size: 12px;
+} 
+ ul{
+    list-style: none;
+    padding: 0rem;
+    line-height: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+} 
+.social-media-text p {
+    color: white;
+    font-size: 10px;
+    margin-top: 1rem;
+    line-height: 15px;
+}
+.address, .number, .mail {
+    display: flex;
+}
+ .contact-icon {
+    height: 12px;
+    margin: 10px 0px 0;
+}
+.social-media {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.social-media-container {
+     margin-left: .5rem;
+}
+}
+@media only screen and (min-width: 501px) and (max-width: 774px){
+    
+}
+@media only screen and (max-width: 991px){
+    
 }
